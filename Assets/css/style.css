@@ -207,7 +207,6 @@ input[type=submit] {
 }
 
 /* media */
-/* cant figure out how to change the size of this section without affecting the section for all screen sixes */
 
 @media(max-width: 980px) {
     #masthead {
@@ -217,76 +216,81 @@ input[type=submit] {
         padding-right: 60px;
     }
     .main-section {
+        width: 68%;
         margin-bottom: 50%;
-    }
-    /* #imput-form {
-        margin-bottom: 35%;
-        margin-left: 4%;
-        width: 60%;
-    } */
+        /* why is margin bottom differnt on the portfolio page in example */
     }
     #submit-button {
         margin-left: 40px;
     }
     ul {
         list-style-type: none;
-        /* I can't get rid of the extra spacing on the left. Need advice */
+        padding: 0;
     }
-    @media screen and (max-width: 768px) {
-        #masthead {
-            width: 100%;
-            position: absolute;
-            padding-left: 20px;
-            padding-right: 30px;
-        }
-        .auth-image {
-            width: 50%;
-            margin-bottom: 25px;
-        }
-        .main-section {
-            margin-bottom: 50%;
-        }
-        #submit-button {
-            margin-left: 40px;
-        }
-        ul {
-            list-style-type: none;
-        }
-        .work {
-            margin-left: 30px;
-        }
+}
+
+@media screen and (max-width: 768px) {
+    #masthead {
+        width: 100%;
+        position: absolute;
+        padding-left: 20px;
+        padding-right: 30px;
     }
-    @media screen and (max-width: 640px) {
-        #masthead {
-            position: static;
-        }
-        #logo {
-            width: 100%;
-        }
-        nav {
-            margin: auto;
-            width: 100%;
-            text-align: center;
-        }
-        #main-container {
-            padding-top: 1%;
-        }
-        .main-section {
-            margin: 0 0 100px;
-        }
-        .auth-image {
-            float: none;
-            width: 100%;
-        }
-        .work {
-            float: none;
-            align-content: center;
-            margin-left: 25%;
-        }
-        #submit-button {
-            margin-left: 40px;
-        }
-        ul {
-            list-style-type: none;
-        }
+    .auth-image {
+        width: 50%;
+        margin-bottom: 25px;
     }
+    .main-section {
+        width: 100%;
+        margin-bottom: 50%;
+    }
+    #submit-button {
+        margin-left: 40px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .work {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #masthead {
+        position: static;
+    }
+    #logo {
+        width: 100%;
+    }
+    nav {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    #main-container {
+        width: 100%;
+        padding-top: 1%;
+    }
+    .main-section {
+        margin: 0 0 100px;
+    }
+    .auth-image {
+        float: none;
+        width: 100%;
+    }
+    .work {
+        padding-right: none;
+        width: 100%;
+        float: none;
+        align-content: center;
+        margin: 0%;
+    }
+    #submit-button {
+        margin-left: 40px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+}
